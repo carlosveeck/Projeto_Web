@@ -1,0 +1,133 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.pinimg.com/originals/ef/cf/2e/efcf2eae9a1cba73a0d15028898cecfa.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.navegador {
+    background-color: #0d0d41;
+    overflow: hidden;
+  }
+
+.navegador a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .navegador a:hover {
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+  }
+
+  .navegador a.active {
+    background-color: #3f11c9;
+    color: white;
+  }
+
+  .principal{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: azure;
+}
+
+.botao{
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.content{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 15px;
+}
+
+.card{
+  background: azure;
+  box-shadow: 0px 2px 11px black;
+  border-radius: 20px;
+}
+
+.mid-card{
+  background: url("foto zapzap.jpg") center/cover;
+  width: 400px;
+  height: 400px;
+}
+
+.top-card{
+  padding: 20px;
+}
+
+.bottom-card{
+  padding: 20px;
+}
+
+.profile-box{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 15px;
+  margin-left: -600px;
+  margin-top: 40px;
+}
+
+.profile{
+  background: azure;
+  box-shadow: 0px 2px 11px black;
+  border-radius: 20px;
+}
+
+.mid-profile{
+  padding: 60px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .profile-box{
+    height: 2000px;
+    margin-right: 400px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .profile-box{
+    height: 1800px;
+    margin-right: 100px;
+  }
+}
+
+  @media screen and (max-width: 600px) {
+    .profile-box{
+      height: 2000px;
+      margin-right: 0px;
+    }
+  }
